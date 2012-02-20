@@ -59,6 +59,7 @@ function update_chart(bldg) {
     var options = {
         chart: {
             renderTo: 'graph',
+            zoomType: 'x',
             defaultSeriesType: 'areaspline',
             borderWidth: 0,
             borderRadius: 0,
@@ -108,7 +109,7 @@ function update_chart(bldg) {
         },
         plotOptions: {
             areaspline: {
-                fillOpacity: 0.5,
+                fillOpacity: 1.0,
                 marker: {
                     enabled: false,
                     states: {
@@ -143,7 +144,8 @@ function update_chart(bldg) {
             color: 'rgba(213, 68, 68, .5)',
             threshold: 149,
             fillColor: 'rgba(213, 68, 68, .1)',
-            lineColor: 'rgba(213, 68, 68, .6)'
+            lineColor: 'rgba(193, 48, 48, .6)',
+            linewidth: 1
         },
         {
             name: 'Actual energy use',
